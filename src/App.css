@@ -5,7 +5,37 @@
   text-align: center;
 }
 
-li{
+.expense{
   list-style-type: none;
-  background-color: bisque;
+  background-color: #F5C6C7;
+  border-radius: 5px;
+}
+
+.income{
+  list-style-type: none;
+  background-color: #D7EEDB;
+  border-radius: 5px;
+}
+
+
+
+
+.form-new-input{
+  grid-template-columns: 1fr 1.5fr;
+  margin: 1.6rem; */
+  padding: 1.2rem;
+  background-color: ;
+  border-radius: 7px;
+}
+
+.input-form{
+  font-size: 20px;
+  padding: 5px;
+  margin: 12px;
+}
+
+.input-form-description{
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 5px;
 }

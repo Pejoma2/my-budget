@@ -1,12 +1,12 @@
 import Data from "./Data"
 
-function IncomeList({data}) {
+function IncomeList({data, totalOutcome}) {
     return (
         <div>
             <h3>Incomes</h3>
             <ul>
                 {data.map((data)=> (
-                   data.type === "+" ? (<Data data={data} key={data.id}/>): null
+                   data.type === "+" ? (<Data data={data} key={data.id} totalOutcome={totalOutcome}/>): null
                 ))}
             </ul>
 

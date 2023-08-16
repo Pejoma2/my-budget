@@ -17,6 +17,7 @@ function NewInput({ onAddData }) {
       description,
       value,
       type,
+      // eachOutcomePercentage: 
     };
     onAddData(newData);
     setType("+");
@@ -25,26 +26,29 @@ function NewInput({ onAddData }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <select value={type} onChange={(e) => setType(e.target.value)}>
+    <form className="form-new-input" onSubmit={handleSubmit}>
+      <select className="input-form" value={type} onChange={(e) => setType(e.target.value)}>
         <option value={"+"}>+</option>
         <option value={"-"}>-</option>
       </select>
 
-      <input
-        type="text"
-        placeholder="Add Description"
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-      />
+        <div>
+            <input
+                className="input-form-description"
+                type="text"
+                placeholder="Add Description"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+            />
 
-      <input
-        type="number"
-        placeholder="Add Value"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-      />
-
+            <input
+                className="input-form"
+                type="number"
+                placeholder="Add Value"
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+            />
+        </div>
       <button>Send</button>
     </form>
   );
