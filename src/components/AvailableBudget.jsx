@@ -11,14 +11,12 @@ function AvailableBudget({ data, totalOutcome }) {
 
   let outcomePercentage = Math.abs((totalOutcome / totalIncome)) * 100;
 
-  console.log(totalOutcome + "outcome")
-  console.log(totalBudget + "budget")
 
   return (
     <div>
       <div>
         <h1>Available Budget</h1>
-        <h1>${new Intl.NumberFormat("en-US").format(totalBudget)}</h1>
+        <h1 className={totalBudget < 0 ? "in-red" : " "}>${new Intl.NumberFormat("en-US").format(totalBudget)}</h1>
       </div>
       <div>
         <h3>Income</h3>

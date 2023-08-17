@@ -12,7 +12,7 @@ function App() {
 
   function handleAddData(newData) {
     setData((data) => [...data, newData]);
-    console.log(data);
+    
   }
 
   return (

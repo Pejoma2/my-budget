@@ -7,13 +7,13 @@
 
 .expense{
   list-style-type: none;
-  background-color: #F5C6C7;
+  background: linear-gradient(#F5C6C7, #D56B6F);
   border-radius: 5px;
 }
 
 .income{
   list-style-type: none;
-  background-color: #D7EEDB;
+  background: linear-gradient(#D7EEDB, #75B79e);
   border-radius: 5px;
 }
 
@@ -38,4 +38,11 @@
   margin-left: 10px;
   font-size: 20px;
   padding: 5px;
+}
+
+.in-red{
+  color: red;
+  border: solid 1px;
+  border-radius: 50px;
+  padding: 10px;
 }
